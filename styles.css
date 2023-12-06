@@ -1,0 +1,29 @@
+:root {
+    --bgc: rgb(135, 25, 238);
+    --black: #191919;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bgc);
+}
+
+.white-button {
+    padding: 19px 30px 16px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #FFF;
+    text-align: center;
+    font-family: Forum;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
