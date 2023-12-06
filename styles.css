@@ -1,6 +1,7 @@
 :root {
-    --bgc: rgb(135, 25, 238);
+    --bgc: #3B181E;
     --black: #191919;
+    --gradient: radial-gradient(circle, rgba(51,21,26,1) 35%, rgba(88,0,0,1) 100%);
 }
 
 * {
@@ -10,7 +11,8 @@
 }
 
 body {
-    background-color: var(--bgc);
+    /* background-color: var(--bgc); */
+    background: var(--gradient);
 }
 
 .white-button {
