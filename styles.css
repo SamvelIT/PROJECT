@@ -1,29 +1,63 @@
 :root {
-    --bgc: rgb(135, 25, 238);
-    --black: #191919;
+  --bgc: rgb(135, 25, 238);
+  --black: #191919;
+  --gradient: linear-gradient(90deg, rgba(59, 24, 30, 1) 35%, rgba(48, 16, 22, 1) 100%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--bgc);
+  /* background-color: var(--bgc); */
+  background: var(--gradient);
 }
 
 .white-button {
-    padding: 19px 30px 16px;
-    border: 1px solid white;
-    background-color: transparent;
-    color: #FFF;
-    text-align: center;
-    font-family: Forum;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
+  padding: 19px 30px 16px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-family: Forum;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.card {
+  width: 350px;
+}
+
+.card__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  height: 220px;
+  background: #262835;
+}
+
+.card__number,
+.card__price {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.card__number {
+  align-self: flex-end;
+}
+
+.card__logo {
+  align-self: center;
 }
