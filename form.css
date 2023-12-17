@@ -1,0 +1,198 @@
+:root {
+    --bgc: rgb(135, 25, 238);
+    --black: #191919;
+    --gradient: linear-gradient(90deg, rgba(59, 24, 30, 1) 35%, rgba(48, 16, 22, 1) 100%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    /* background-color: var(--bgc); */
+    background: url(Merry_Christmas.jpg);
+  }
+  
+  .white-button {
+    padding: 19px 30px 16px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-family: Forum;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+  
+  .card {
+    /* max-width: 350px; */
+    border-radius: 8px 0px8px  0px;
+    background: #281014;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card__preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    height: 220px;
+    background: #262835;
+  }
+  
+  .card__number,
+  .card__price {
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.2px;
+  }
+  
+  .card__number {
+    align-self: flex-end;
+  }
+  
+  .card__logo {
+    align-self: center;
+  }
+  
+  .cards ul {
+    /* display: flex;
+    justify-content: center;
+    gap: 30px; */
+    list-style: none;
+  }
+  
+  .card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 70px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .snow-main {
+    background-image: url(snow1.png);
+    height: 100%;
+    min-height: 100vh;
+    animation: snow 20s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes snow {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 500px 1000px;
+    }
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  input {
+    background-color: transparent;
+    border: 2px solid white;
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 30px  50px;
+    font-size: 30px;
+    font-weight: 700;
+  
+    
+  }
+  
+  html,
+  body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+  }
+  
+  .glow-on-hover {
+      width: 220px;
+      height: 50px;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+  }
+  
+  .glow-on-hover:before {
+      content: '';
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      position: absolute;
+      top: -2px;
+      left:-2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing 20s linear infinite;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+      border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+      color: #000
+  }
+  
+  .glow-on-hover:active:after {
+      background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+      opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+      0% { background-position: 0 0; }
+      50% { background-position: 400% 0; }
+      100% { background-position: 0 0; }
+  }
+  
+  .glow-on-hover {
+    justify-content: flex-end;
+  }
