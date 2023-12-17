@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   /* background-color: var(--bgc); */
   background: url(Merry_Christmas.jpg);
+  backdrop-filter: brightness(.5);
 }
 
 .white-button {
@@ -103,27 +104,30 @@ body {
   }
 }
 
-form {
+.form {
+  position: relative;
+  z-index: 2;
   display: flex;
-  flex-direction: column;
   gap: 20px;
 }
 
 input {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.162);
   border: 2px solid white;
-  backdrop-filter: blur(5px);
   color: white;
   padding: 30px 50px;
   font-size: 30px;
   font-weight: 700;
-
-
+  outline: none;
+  border-radius: 10px;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.811);
 }
 
 .glow-on-hover {
   width: 220px;
-  height: 50px;
+  height: 97px;
   border: none;
   outline: none;
   color: #fff;
@@ -187,9 +191,4 @@ input {
   100% {
     background-position: 0 0;
   }
-}
-
-.form {
-  justify-content: flex-end;
-  display: flex;
 }
